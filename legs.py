@@ -1,6 +1,8 @@
 from machine import Pin,PWM
 import time
 
+
+def rigth_leg() :
 sg90 = PWM(Pin(14, mode=Pin.OUT))
 sg90.freq(50)
 sg91 = PWM(Pin(12, mode=Pin.OUT))
@@ -13,23 +15,12 @@ sg91.freq(50)
 # 0.025*1024=25.6
 # 0.12*1024=122.88
 
-hankle_int = sg90.duty(65)
-hankle_neut = sg90.duty(83)
-hankle_ext = sg90.duty(133)
-
-#knee
-#knee
-#knee
-
-hip_front = sg91.duty(65)
-hip_neut = sg91.duty(85)
-hip_rear = sg91.duty(1359)
-
-while True :
-    hip_front
+while True:
+    sg90.duty(23)
     time.sleep(1)
-    hip_neut
+    sg91.duty(25)
     time.sleep(1)
-    hip_rear
+    sg90.duty(143)
     time.sleep(1)
-    
+    sg91.duty(123)
+    time.sleep(1)
