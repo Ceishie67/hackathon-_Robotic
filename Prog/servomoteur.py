@@ -1,5 +1,4 @@
-from machine import Pin,PWM
-import time
+import librairie.py
 
 #sg90 = PWM(Pin(14, mode=Pin.OUT))
 #sg90.freq(50)
