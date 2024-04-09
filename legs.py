@@ -3,10 +3,10 @@ import time
 
 
 def rigth_leg() :
-sg90 = PWM(Pin(14, mode=Pin.OUT))
-sg90.freq(50)
-sg91 = PWM(Pin(12, mode=Pin.OUT))
-sg91.freq(50)
+    sg90 = PWM(Pin(14, mode=Pin.OUT))
+    sg90.freq(50)
+    sg91 = PWM(Pin(12, mode=Pin.OUT))
+    sg91.freq(50)
 
 
 # 0.5ms/20ms = 0.025 = 2.5% duty cycle
