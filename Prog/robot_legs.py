@@ -1,5 +1,4 @@
-from machine import Pin,PWM
-import time
+import librairie.py
 
 
 def rigth_leg() :
