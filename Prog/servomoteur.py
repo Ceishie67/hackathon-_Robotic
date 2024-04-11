@@ -1,4 +1,4 @@
-import librairie.py
+from librairie import *
 
 #sg90 = PWM(Pin(14, mode=Pin.OUT))
 #sg90.freq(50)
