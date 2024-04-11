@@ -1,12 +1,11 @@
-from librairie import *
-from robot_legs import *
+#---------------------------------------------------------#
+# Fichier servant a lancer le programme en appelant les fonctions utiles a son bon fonctionnement
+#---------------------------------------------------------#
 
+from machine import Pin,PWM
+import time
+from robot_legs import rotation
+
+# Permet de faire fonctionner le programme de toutes les fonctions importé en continue car la condition ne change jamais
 while True:
-    sg90.duty(23)
-    time.sleep(1)
-    sg91.duty(25)
-    time.sleep(1)
-    sg90.duty(143)
-    time.sleep(1)
-    sg91.duty(123)
-    time.sleep(1)
+    rotation_hankle_half_pos_turn()

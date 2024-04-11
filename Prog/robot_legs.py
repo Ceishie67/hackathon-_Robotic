@@ -1,6 +1,7 @@
-from librairie import *
+import Prog.library as library
+import Prog.library as library
 
-def rotation_ () :
+def rotation() :
 
     sg90 = PWM(Pin(27, mode=Pin.OUT))
     sg90.freq(50)
@@ -9,6 +10,7 @@ def rotation_ () :
     i = 125
     j = 0
 
+    
     while i > 33 :
         sg90.duty(i)
         time.sleep(0.01)

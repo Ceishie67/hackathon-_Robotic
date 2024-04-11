@@ -1,4 +1,4 @@
-from librairie import *
+import Prog.library as library
 
 #sg90 = PWM(Pin(14, mode=Pin.OUT))
 #sg90.freq(50)
