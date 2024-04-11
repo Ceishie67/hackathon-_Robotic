@@ -1,5 +1,5 @@
-import librairie.py
-import robot_legs.py
+from librairie import *
+from robot_legs import *
 
 while True:
     sg90.duty(23)
