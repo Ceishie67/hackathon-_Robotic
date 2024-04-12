@@ -1,11 +1,11 @@
 #-----------------------------------------------------------------------------#
 # Fichier servant à initialiser et utiliser les servomoteurs du bras.
 # Une structure de balisage est présente à travers ce code.
-# MEMO :
-# - A = Arms, sert de balisage pour les différentes fonctionnaliter.
-# - L = left, pour la différenciation entre les deux bras.
-# - R = right, pour la différenciation entre les deux bras.
-# - rotation = rotation du servomoteur présent servant de position de base.
+#   MEMO :
+#       - A = Arms, sert de balisage pour les différentes fonctionnaliter.
+#       - L = left, pour la différenciation entre les deux bras.
+#       - R = right, pour la différenciation entre les deux bras.
+#       - rotation = rotation du servomoteur présent servant de position de base.
 #-----------------------------------------------------------------------------#
 
 
