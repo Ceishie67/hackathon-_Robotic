@@ -9,26 +9,20 @@ def forward(nbstep) :
 
     #jambe gauche
     while nbstep > 0:
-        rotation_hip_half_pos_turn()
-        rotation_ankle_half_neg_turn()
-        rotation_hip_return_neutral_pos()
-        rotation_hip_half_neg_turn()
-        rotation_ankle_return_neutral_neg()
-        rotation_ankle_half_pos_turn()
-        rotation_hip_return_neutral_neg()
-        #permet d'aligner le point de stablite et le centre de gravite
-        rotation_ankle_return_neutral_pos()
+        #permet de met
+        rotation_Lankle_half_neg_turn()
+        rotation_Lhip_half_neg_turn()
+        rotation_Lankle_return_neutral_neg()
+        rotation_Lhip_return_neutral_neg()
         nbstep -= 1
 
-        rotation_hip_half_pos_turn()
-        rotation_ankle_half_pos_turn()
-        rotation_hip_return_neutral_pos()
-        rotation_hip_half_neg_turn()
-        rotation_ankle_return_neutral_neg()
-        rotation_ankle_half_pos_turn()
-        rotation_hip_return_neutral_neg()
+        rotation_Lhip_half_pos_turn()
+        rotation_Lankle_half_pos_turn()
+        rotation_Lhip_return_neutral_pos()
+        rotation_Lhip_half_neg_turn()
+        rotation_Lankle_return_neutral_pos()
         #permet d'aligner le point de stablite et le centre de gravite
-        rotation_ankle_return_neutral_pos()
-
-
+        rotation_Lankle_half_neg_turn()
+        rotation_Lhip_return_neutral_neg()
+        rotation_Lankle_return_neutral_neg()
         nbstep -= 1
