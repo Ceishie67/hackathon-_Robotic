@@ -1,8 +1,8 @@
 from machine import Pin,PWM
 import time
-from ankle import *
-from hip import *
-from knee import *
+from ankle_back import *
+from hip_back import *
+from knee_back import *
 
 #cette fonction permet de faire avancer le robot pas a pas
 def forward(nbstep) :

@@ -5,9 +5,9 @@
 from machine import Pin,PWM
 import time
 from actions import *
-from ankle import *
-from hip import *
-from knee import *
+from ankle_back import *
+from hip_back import *
+from knee_back import *
 
 
 # Permet de faire fonctionner le programme de toutes les fonctions importé en continue car la condition ne change jamais
