@@ -36,7 +36,7 @@ Rankle.freq(50)
 def rotation_Lankle_half_pos_turn(tps) :
     i = 77
         
-    while i < 88 :
+    while i < 95 :
         time.sleep(tps)
         Lankle.duty(i)
         time.sleep(tps)
@@ -116,6 +116,7 @@ def rotation_Rankle_return_neutral_pos(tps) :
         time.sleep(tps)
         print(i)
         i -= 1
+
 
 
 
