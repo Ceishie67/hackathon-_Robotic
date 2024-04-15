@@ -19,7 +19,7 @@ import time
 Lhip = PWM(Pin(26, mode=Pin.OUT))
 Lhip.freq(50)
 
-#on definit le pin de la carte esp ici Rhip pour hanche
+# Assignation des pins pour les moteurs de la hanche droite.
 Rhip = PWM(Pin(34, mode=Pin.OUT))
 Rhip.freq(50)
 
@@ -75,7 +75,12 @@ def rotation_Lhip_return_neutral_pos(tps) :
         print(i)
         i -= 1
 
-#on defini une fonction qui permet a la cheville de faire un mouvement vers l'avant
+###### ___END Hi2___
+        
+
+###### ___START Hi3___ : Définition des mouvements de base pour la hanche droite.
+
+# On defini une fonction qui permet a la hanche de faire un mouvement vers l'avant.
 def rotation_Rhip_half_pos_turn(tps) :
     i = 77
         
@@ -86,7 +91,7 @@ def rotation_Rhip_half_pos_turn(tps) :
         print(i)
         i += 1
 
-#on defini une fonction qui permet a la cheville de faire un mouvement vers l'arriere
+# On defini une fonction qui permet a la hanche de faire un mouvement vers l'arriere.
 def rotation_Rhip_half_neg_turn(tps) :
     i = 77
     while i > 50 :
@@ -97,7 +102,7 @@ def rotation_Rhip_half_neg_turn(tps) :
         i -= 1
 
         
-#on defini une fonction qui permet a la cheville de faire un mouvement pour revenir en position neutre depuis la position arriere
+# On defini une fonction qui permet a la hanche de faire un mouvement pour revenir en position neutre depuis la position arriere.
 def rotation_Rhip_return_neutral_neg(tps) :
     i = 50
     while i < 77 :
@@ -107,7 +112,7 @@ def rotation_Rhip_return_neutral_neg(tps) :
         print(i)
         i += 1
 
-#on defini une fonction qui permet a la cheville de faire un mouvement pour revenir en position neutre depuis la position avant
+# On defini une fonction qui permet a la hanche de faire un mouvement pour revenir en position neutre depuis la position avant.
 def rotation_Rhip_return_neutral_pos(tps) :
     i = 120
     while i > 77 :
@@ -117,4 +122,4 @@ def rotation_Rhip_return_neutral_pos(tps) :
         print(i)
         i -= 1
 
-
+###### ___END Hi3___

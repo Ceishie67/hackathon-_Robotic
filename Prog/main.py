@@ -1,6 +1,12 @@
-#---------------------------------------------------------#
-# Fichier servant a lancer le programme en appelant les fonctions utiles a son bon fonctionnement
-#---------------------------------------------------------#
+#-----------------------------------------------------------------------------#
+# Fichier servant a lancer le programme en appelant les fonctions utiles a son bon fonctionnement.
+# Une structure de balisage est présente à travers ce code.
+#   MEMO :
+#       - M = Main, sert de balisage pour les différentes fonctionnaliter.
+#       - neg = negative, donne le sens de rotation du servomoteur.
+#       - pos = positive, donne le sens de rotation du servomoteur.
+#-----------------------------------------------------------------------------#
+
 
 from machine import Pin,PWM
 import time
@@ -9,6 +15,8 @@ from ankle_back import *
 from hip_back import *
 from knee_back import *
 
+
+###### ___START M1___ : Lancement des commandes executés par le robot.
 
 # Permet de faire fonctionner le programme de toutes les fonctions importé en continue car la condition ne change jamais
 while True:
@@ -34,4 +42,4 @@ while True:
     rotation_Rankle_return_neutral_neg(0.01)
     rotation_Lankle_return_neutral_pos(0.01)
 
-    
+###### ___END M1___
