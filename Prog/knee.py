@@ -6,7 +6,7 @@ Lknee = PWM(Pin(27, mode=Pin.OUT))
 Lknee.freq(50)
 
 #on definit le pin de la carte esp ici Rknee pour hanche
-Rknee = PWM(Pin(35, mode=Pin.OUT))
+Rknee = PWM(Pin(19, mode=Pin.OUT))
 Rknee.freq(50)
 
 #position droite 77
@@ -56,7 +56,7 @@ def rotation_Lknee_return_neutral_pos(tps) :
         print(i)
         i -= 1
 
-#on defini une fonction qui permet a la cheville de faire un mouvement vers l'avant
+#on defini une fonction qui permet a la genoux de faire un mouvement vers l'avant
 def rotation_Rknee_half_pos_turn(tps) :
     i = 77
         
@@ -67,7 +67,7 @@ def rotation_Rknee_half_pos_turn(tps) :
         print(i)
         i += 1
 
-#on defini une fonction qui permet a la cheville de faire un mouvement vers l'arriere
+#on defini une fonction qui permet a la genoux de faire un mouvement vers l'arriere
 def rotation_Rknee_half_neg_turn(tps) :
     i = 77
     while i > 50 :
@@ -78,7 +78,7 @@ def rotation_Rknee_half_neg_turn(tps) :
         i -= 1
 
         
-#on defini une fonction qui permet a la cheville de faire un mouvement pour revenir en position neutre depuis la position arriere
+#on defini une fonction qui permet a la genoux de faire un mouvement pour revenir en position neutre depuis la position arriere
 def rotation_Rknee_return_neutral_neg(tps) :
     i = 50
     while i < 77 :
@@ -88,7 +88,7 @@ def rotation_Rknee_return_neutral_neg(tps) :
         print(i)
         i += 1
 
-#on defini une fonction qui permet a la cheville de faire un mouvement pour revenir en position neutre depuis la position avant
+#on defini une fonction qui permet a la genoux de faire un mouvement pour revenir en position neutre depuis la position avant
 def rotation_Rknee_return_neutral_pos(tps) :
     i = 88
     while i > 77 :
@@ -97,5 +97,3 @@ def rotation_Rknee_return_neutral_pos(tps) :
         time.sleep(tps)
         print(i)
         i -= 1
-
-
